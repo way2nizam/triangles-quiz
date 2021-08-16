@@ -1,3 +1,16 @@
 .triangle-game {
   text-decoration: none;
 }
+
+.question-container {
+  padding: 3px;
+}
+
+.nav-bar {
+  margin-bottom: 25px;
+}
+
+#submit-btn {
+ margin-top: 20px;
+  margin-bottom: 20px;
+}
