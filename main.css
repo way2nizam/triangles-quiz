@@ -1,5 +1,9 @@
+:root{
+  --primary-color: #f1986f;
+}
+
 .triangle-game {
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 .question-container {
@@ -13,4 +17,57 @@
 #submit-btn {
  margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.cell{
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 30px;
+  margin: 0.5rem 0.5rem 0.5rem;
+  padding: 1rem;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color:white;
+}
+a{
+  text-decoration: none;
+}
+
+#footer{
+  width: 100%;
+  min-height: 3vh;
+  background-color: rgba(66, 149, 243, 0.5);
+}
+.footer-list{
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-item{
+  list-style: none;
+  font-size: 1rem;
+  padding: 0.5rem .5rem;
 }

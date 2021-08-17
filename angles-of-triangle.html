@@ -12,28 +12,75 @@
 
 <body>
 
-    <div class="nav-bar">
-        <a class="triangle-game" href="/angles-of-triangle.html">1. Angles of triangle</a>
-        <a class="triangle-game" href="/calculate-hypotenuse.html">2. Check Hypotenous</a>
-        <a class="triangle-game" href="/calculate-area.html">3. Calculate Area</a>
-        <a class="triangle-game" href="/triangle-quiz.html">4. Take A Quiz</a>
+    <div class="container">
+        <div>
+            <h1>Welcome to Triangle Gyan</h1>
+
+            <div class="grid">
+                <a href="/angles-of-triangle.html">
+                    <div class="cell">
+                        <p>1. Angles of triangle</p>
+                    </div>
+                </a>
+                <a href="/calculate-hypotenuse.html">
+                    <div class="cell">
+                        <p>2. Check Hypotenous</p>
+                    </div>
+                </a>
+                <a href="/calculate-area.html">
+                    <div class="cell">
+                        <p>3. Calculate Area</p>
+                    </div>
+                </a>
+                <a href="/triangle-quiz.html">
+                    <div class="cell">
+                        <p>4. Take A Quiz</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <h1>Area Of Triangle</h1>
+            <p>Enter the angle value between 1 and 180.</p>
+
+            <label for="angle1">Angle 1: </label>
+            <input type="number" id="angle1">
+
+            <label for="angle2">Angle 2: </label>
+            <input type="number" id="angle2">
+
+            <label for="angle3">Angle 3: </label>
+            <input type="number" id="angle3">
+
+            <button id="check-triangle">Check Triangle</button>
+
+            <div id="output-div"></div>
+
+        </div>
     </div>
 
-    <h1>Angles Of Triangle</h1>
-    <p>Enter the angle value between 1 and 180.</p>
+    <footer id="footer">
+        <ul class="footer-list">
 
-    <label for="angle1">Angle 1: </label>
-    <input type="number" id="angle1">
+            <li class="list-item">
+                <a target="_blank" href="https://nizam-portfolio-24x7.netlify.app/">My Portfolio</a>
+            </li>
 
-    <label for="angle2">Angle 2: </label>
-    <input type="number" id="angle2">
+            <li class="list-item">
+                <a target="_blank" href="https://github.com/way2nizam">GitHub</a>
+            </li>
 
-    <label for="angle3">Angle 3: </label>
-    <input type="number" id="angle3">
+            <li class="list-item">
+                <a target="_blank" href="https://www.linkedin.com/in/nizamy710/">LinkedIn</a>
+            </li>
 
-    <button id="check-triangle">Check Triangle</button>
+            <li class="list-item">
+                <a target="_blank" href="https://twitter.com/nizamy710">Twitter</a>
+            </li>
 
-    <div id="output-div"></div>
+        </ul>
+    </footer>
+
 
 
     <script src="/angles-of-triangle.js"></script>
