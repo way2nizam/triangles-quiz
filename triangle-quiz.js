@@ -2,7 +2,7 @@ const quizForm = document.querySelector('.quiz-form');
 const submitButtonAnswer = document.querySelector('#submit-btn');
 const outputDiv = document.querySelector('#output-div');
 
-const correctAnswer = [
+const correctAnswers = [
   'reflex angle',
   'no',
   '2',
@@ -21,7 +21,7 @@ function calculateScore() {
 
   const formResults = new FormData(quizForm);
   for (let value of formResults.values()) {
-    if (value === correctAnswer[index]) {
+    if (value === correctAnswers[index]) {
       score = score + 1;
     }
     index = index + 1;
@@ -29,4 +29,4 @@ function calculateScore() {
   outputDiv.innerText = 'Your Total Score is ' + score + '.';
 }
 
-quizForm.addEventListener('click', calculateScore);
+submitButtonAnswer.addEventListener('click', calculateScore);
