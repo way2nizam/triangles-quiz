@@ -3,7 +3,11 @@ const sideTwo = document.querySelector('#side2');
 const checkButton = document.querySelector('#check-btn');
 const outputDiv = document.querySelector('#output-div');
 
+outputDiv.style.display = 'none';
+
 function showMessage(message) {
+  outputDiv.style.display = 'block';
+
   outputDiv.innerText = message;
 }
 

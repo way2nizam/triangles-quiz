@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+:root{
+  --primary-color: #e9682c;
+}
+
+/* area of traingle */
+
+
+.back-button {
+    display: flex;
+    padding: 10px;
+    background-color: #00BFFF;
+    width: 60px;
+    margin: auto;
+    color: white;
+}
+
+.back {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.container-area {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.input-class {
+    margin: 8px;
+    padding: 8px;
+    font-size: 18px;
+
+  }
+  
+  button {
+    background-color: #00bfff;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .quiz-form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-bottom: 20px;
+
+  }
+
+  .question-container p {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(27, 27, 27);
+  }
+  
+  #output-div {
+    margin-top: 60px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      margin: 15px;
+      max-width: 350px;
+      margin: auto;
+    }
+  }
+  
+  

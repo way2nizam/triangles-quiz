@@ -6,196 +6,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/main2.css">
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <h1>Welcome to Triangle Gyan</h1>
 
-            <div class="grid">
-                <a href="/angles-of-triangle.html">
-                    <div class="cell">
-                        <p>1. Angles of triangle</p>
-                    </div>
-                </a>
-                <a href="/calculate-hypotenuse.html">
-                    <div class="cell">
-                        <p>2. Check Hypotenous</p>
-                    </div>
-                </a>
-                <a href="/calculate-area.html">
-                    <div class="cell">
-                        <p>3. Calculate Area</p>
-                    </div>
-                </a>
-                <a href="/triangle-quiz.html">
-                    <div class="cell">
-                        <p>4. Take A Quiz</p>
-                    </div>
-                </a>
+    <div class="container-area">
+
+        <div class="back">
+            <a href="/" class="back-button">Back🔙</a>
+        </div>
+
+        <h1>Triangle Quiz</h1>
+
+        <form class="quiz-form">
+            <div class="question-container">
+                <p>1. Which of the following angle cannot present in a triangle? </p>
+
+                <label>
+                    <input type="radio" name="question1" value="acute angle" /> Acute Angle
+                </label>
+
+                <label>
+                    <input type="radio" name="question1" value="reflex angle" /> Reflex Angle
+                </label>
 
             </div>
 
-            <h1>Triangle Quiz</h1>
+            <div class="question-container">
+                <p>2. Can we have a triangle with all the three angles greater than 60⁰? </p>
 
-            <form class="quiz-form">
-                <div class="question-container">
-                    <p>1. Which of the following angle cannot present in a triangle? </p>
+                <label>
+                    <input type="radio" name="question2" value="yes" /> Yes. Possible
+                </label>
 
-                    <label>
-                        <input type="radio" name="question1" value="acute angle" /> Acute Angle
-                    </label>
+                <label>
+                    <input type="radio" name="question2" value="no" /> No. Not Possible
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question1" value="reflex angle" /> Reflex Angle
-                    </label>
+            <div class="question-container">
+                <p>3. Least number of possible acute angles in a triangle is ______</p>
 
-                </div>
+                <label>
+                    <input type="radio" name="question3" value="2" />2
+                </label>
 
-                <div class="question-container">
-                    <p>2. Can we have a triangle with all the three angles greater than 60⁰? </p>
+                <label>
+                    <input type="radio" name="question3" value="1" />1
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question2" value="yes" /> Yes. Possible
-                    </label>
+            <div class="question-container">
+                <p>4. If all the angles of triangle are equal, then each of the angles is equal to___</p>
 
-                    <label>
-                        <input type="radio" name="question2" value="no" /> No. Not Possible
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question4" value="60" />60<sup>0</sup>
+                </label>
 
-                <div class="question-container">
-                    <p>3. Least number of possible acute angles in a triangle is ______</p>
+                <label>
+                    <input type="radio" name="question4" value="45" />45<sup>0</sup>
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question3" value="2" />2
-                    </label>
+            <div class="question-container">
+                <p>5. Can a triangle has two obtuse angles?</p>
 
-                    <label>
-                        <input type="radio" name="question3" value="1" />1
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question5" value="yes" />
+                    Yes. Possible
+                </label>
 
-                <div class="question-container">
-                    <p>4. If all the angles of triangle are equal, then each of the angles is equal to___</p>
+                <label>
+                    <input type="radio" name="question5" value="no" />No. Not possible
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question4" value="60" />60<sup>0</sup>
-                    </label>
+            <div class="question-container">
+                <p>6. The two angles other than the right angle in a right angled triangle are always acute </p>
 
-                    <label>
-                        <input type="radio" name="question4" value="45" />45<sup>0</sup>
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question6" value="false" />False
+                </label>
 
-                <div class="question-container">
-                    <p>5. Can a triangle has two obtuse angles?</p>
+                <label>
+                    <input type="radio" name="question6" value="true" />True
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question5" value="yes" />
-                        Yes. Possible
-                    </label>
+            <div class="question-container">
+                <p>7. How many elements are there in a triangle?</p>
 
-                    <label>
-                        <input type="radio" name="question5" value="no" />No. Not possible
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question7" value="3" />3
+                </label>
 
-                <div class="question-container">
-                    <p>6. The two angles other than the right angle in a right angled triangle are always acute </p>
+                <label>
+                    <input type="radio" name="question7" value="6" />6
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question6" value="false" />False
-                    </label>
+            <div class="question-container">
+                <p>8. Which is the longest side in a right angles triangle?</p>
 
-                    <label>
-                        <input type="radio" name="question6" value="true" />True
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question8" value="hypotenuse" />Hypotenuse
+                </label>
 
-                <div class="question-container">
-                    <p>7. How many elements are there in a triangle?</p>
+                <label>
+                    <input type="radio" name="question8" value="base" />Base
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question7" value="3" />3
-                    </label>
+            <div class="question-container">
+                <p>9. The acute angles of a right triangle are</p>
 
-                    <label>
-                        <input type="radio" name="question7" value="6" />6
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question9" value="supplementary" />Supplementary
+                </label>
 
-                <div class="question-container">
-                    <p>8. Which is the longest side in a right angles triangle?</p>
+                <label>
+                    <input type="radio" name="question9" value="complementary" />Complementary
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question8" value="hypotenuse" />Hypotenuse
-                    </label>
+            <div class="question-container">
+                <p>10. If a triangle has 2 angles of 75<sup>0</sup>. What is the measure of third angle in degree?
+                </p>
 
-                    <label>
-                        <input type="radio" name="question8" value="base" />Base
-                    </label>
-                </div>
+                <label>
+                    <input type="radio" name="question10" value="25" />
+                    25
+                </label>
 
-                <div class="question-container">
-                    <p>9. The acute angles of a right triangle are</p>
+                <label>
+                    <input type="radio" name="question10" value="30" />
+                    30
+                </label>
+            </div>
 
-                    <label>
-                        <input type="radio" name="question9" value="supplementary" />Supplementary
-                    </label>
+        </form>
 
-                    <label>
-                        <input type="radio" name="question9" value="complementary" />Complementary
-                    </label>
-                </div>
+        <button id="submit-btn" class="input-class">Submit Answer</button>
 
-                <div class="question-container">
-                    <p>10. If a triangle has 2 angles of 75<sup>0</sup>. What is the measure of third angle in degree?
-                    </p>
+        <div id="output-div"></div>
 
-                    <label>
-                        <input type="radio" name="question10" value="25" />
-                        25
-                    </label>
-
-                    <label>
-                        <input type="radio" name="question10" value="30" />
-                        30
-                    </label>
-                </div>
-
-            </form>
-
-            <button id="submit-btn">Submit Answer</button>
-
-            <div id="output-div"></div>
-
+        <div class="back">
+            <a href="/" class="back-button">Back🔙</a>
         </div>
+
+
+
     </div>
-
-    <footer id="footer">
-        <ul class="footer-list">
-
-            <li class="list-item">
-                <a target="_blank" href="https://nizam-portfolio-24x7.netlify.app/">My Portfolio</a>
-            </li>
-
-            <li class="list-item">
-                <a target="_blank" href="https://github.com/way2nizam">GitHub</a>
-            </li>
-
-            <li class="list-item">
-                <a target="_blank" href="https://www.linkedin.com/in/nizamy710/">LinkedIn</a>
-            </li>
-
-            <li class="list-item">
-                <a target="_blank" href="https://twitter.com/nizamy710">Twitter</a>
-            </li>
-
-        </ul>
-    </footer>
 
     <script src="/triangle-quiz.js"></script>
 </body>

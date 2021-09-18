@@ -1,73 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+}
+
 :root{
-  --primary-color: #f1986f;
-}
-
-.triangle-game {
-  text-decoration: none;  
-}
-
-.question-container {
-  padding: 3px;
-}
-
-.nav-bar {
-  margin-bottom: 25px;
-}
-
-#submit-btn {
- margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  --primary-color: #e9682c;
 }
 
 .container{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  text-align: center;
+  flex-direction: column;
 }
 
-.cell{
-  background-color: var(--primary-color);
-  width: 100px;
-  height: 30px;
-  margin: 0.5rem 0.5rem 0.5rem;
-  padding: 1rem;
+.container-t {
+display: flex;
+}
 
-  text-align: center;
+.components {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
 
-  font-size: 1rem;
-  font-weight: 600;
+.anchor-tag{
+  background-color: var(--primary-color);
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
   color:white;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
-#footer{
-  width: 100%;
-  min-height: 3vh;
-  background-color: rgba(66, 149, 243, 0.5);
-}
-.footer-list{
-  height: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 15px;
+    max-width: 350px;
+    margin: auto;
+  }
 }
 
-.list-item{
-  list-style: none;
-  font-size: 1rem;
-  padding: 0.5rem .5rem;
-}
