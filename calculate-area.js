@@ -11,8 +11,19 @@ function showMessage(message) {
 }
 
 function calculateAreaOfTraingle() {
-  const area = (Number(baseValue.value) * Number(heightValue.value)) / 2;
-  showMessage('Area of triangle is: ' + area + ' cm2.');
+  if (
+    baseValue.value < 0 ||
+    baseValue.value == '' ||
+    heightValue.value < 0 ||
+    heightValue.value == ''
+  ) {
+    alert(
+      'Input field can not empty or negative. Please enter correct values.'
+    );
+  } else {
+    const area = (Number(baseValue.value) * Number(heightValue.value)) / 2;
+    showMessage('Area of triangle is: ' + area + ' cm2.');
+  }
 }
 
 calculateArea.addEventListener('click', calculateAreaOfTraingle);
