@@ -1,25 +1,36 @@
 const sideOne = document.querySelector('#side1');
 const sideTwo = document.querySelector('#side2');
 const checkButton = document.querySelector('#check-btn');
-const outputDiv = document.querySelector('#output-div');
+const showOutput = document.querySelector('#show-output');
 
-outputDiv.style.display = 'none';
+showOutput.style.display = 'none';
 
 function showMessage(message) {
-  outputDiv.style.display = 'block';
+  showOutput.style.display = 'block';
 
-  outputDiv.innerText = message;
+  showOutput.innerText = message;
 }
 
 function checkHypotenuse() {
   const triangleSide1 = Number(sideOne.value);
   const triangleSide2 = Number(sideTwo.value);
 
-  const sumOfSquareOfTwoSide =
-    triangleSide1 * triangleSide1 + triangleSide2 * triangleSide2;
+  if (
+    triangleSide1 < 0 ||
+    triangleSide1 == '' ||
+    triangleSide2 < 0 ||
+    triangleSide2 == ''
+  ) {
+    alert(
+      'Input field can not be empty or negative. Please enter correct values.'
+    );
+  } else {
+    const sumOfSquareOfTwoSide =
+      triangleSide1 * triangleSide1 + triangleSide2 * triangleSide2;
 
-  const squareRoot = Math.sqrt(sumOfSquareOfTwoSide);
+    const squareRoot = Math.sqrt(sumOfSquareOfTwoSide).toFixed(2);
 
-  showMessage('The lenght of hypotenuse is ' + squareRoot + ' cm.');
+    showMessage('The lenght of hypotenuse is ' + squareRoot + ' cm.');
+  }
 }
 checkButton.addEventListener('click', checkHypotenuse);

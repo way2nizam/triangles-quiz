@@ -1,8 +1,8 @@
 const quizForm = document.querySelector('.quiz-form');
 const submitButtonAnswer = document.querySelector('#submit-btn');
-const outputDiv = document.querySelector('#output-div');
+const showOutput = document.querySelector('#show-output');
 
-outputDiv.style.display = 'none';
+showOutput.style.display = 'none';
 
 const correctAnswers = [
   'reflex angle',
@@ -23,13 +23,16 @@ function calculateScore() {
 
   const formResults = new FormData(quizForm);
   for (let value of formResults.values()) {
+    console.log(formResults.values());
     if (value === correctAnswers[index]) {
       score = score + 1;
+    } else {
+      score = score + 0;
     }
     index = index + 1;
   }
-  outputDiv.style.display = 'block';
-  outputDiv.innerText = 'Your Total Score is ' + score + '.';
+  showOutput.style.display = 'block';
+  showOutput.innerText = 'Your Total Score is ' + score + '.';
 }
 
 submitButtonAnswer.addEventListener('click', calculateScore);

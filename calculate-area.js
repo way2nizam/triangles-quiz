@@ -1,13 +1,13 @@
 const baseValue = document.querySelector('#base');
 const heightValue = document.querySelector('#height');
 const calculateArea = document.querySelector('#calculate-area');
-const outputDiv = document.querySelector('#output-div');
+const showOutput = document.querySelector('#show-output');
 
-outputDiv.style.display = 'none';
+showOutput.style.display = 'none';
 
 function showMessage(message) {
-  outputDiv.style.display = 'block';
-  outputDiv.innerText = message;
+  showOutput.style.display = 'block';
+  showOutput.innerText = message;
 }
 
 function calculateAreaOfTraingle() {
