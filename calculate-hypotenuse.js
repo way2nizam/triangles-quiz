@@ -5,13 +5,12 @@ const showOutput = document.querySelector('#show-output');
 
 showOutput.style.display = 'none';
 
-function showMessage(message) {
+const showMessage = (message) => {
   showOutput.style.display = 'block';
-
   showOutput.innerText = message;
-}
+};
 
-function checkHypotenuse() {
+const checkHypotenuse = () => {
   const triangleSide1 = Number(sideOne.value);
   const triangleSide2 = Number(sideTwo.value);
 
@@ -32,5 +31,5 @@ function checkHypotenuse() {
 
     showMessage('The lenght of hypotenuse is ' + squareRoot + ' cm.');
   }
-}
+};
 checkButton.addEventListener('click', checkHypotenuse);

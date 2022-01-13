@@ -2,16 +2,16 @@ const circleRadius = document.querySelector('#circle-radius');
 const calculateArea = document.querySelector('#calculate-area');
 const showOutput = document.querySelector('#show-output');
 
-var valueOfPie = 3.14;
+const valueOfPie = 3.14;
 
 showOutput.style.display = 'none';
 
-function showMessage(msg) {
+const showMessage = (msg) => {
   showOutput.style.display = 'block';
   showOutput.innerText = 'Area of Circle = ' + msg + 'cm2';
-}
+};
 
-function calculateCircleArea() {
+const calculateCircleArea = () => {
   const radiusOfCircle = circleRadius.value;
 
   if (radiusOfCircle < 0 || radiusOfCircle == '') {
@@ -21,6 +21,6 @@ function calculateCircleArea() {
     const circleArea = valueOfPie * radiusOfCircle * radiusOfCircle;
     showMessage(circleArea);
   }
-}
+};
 
 calculateArea.addEventListener('click', calculateCircleArea);

@@ -5,12 +5,12 @@ const showOutput = document.querySelector('#show-output');
 
 showOutput.style.display = 'none';
 
-function showMessage(message) {
+const showMessage = (message) => {
   showOutput.style.display = 'block';
   showOutput.innerText = message;
-}
+};
 
-function calculateAreaOfTraingle() {
+const calculateAreaOfTraingle = () => {
   if (
     baseValue.value < 0 ||
     baseValue.value == '' ||
@@ -24,6 +24,6 @@ function calculateAreaOfTraingle() {
     const area = (Number(baseValue.value) * Number(heightValue.value)) / 2;
     showMessage('Area of triangle is: ' + area + ' cm2.');
   }
-}
+};
 
 calculateArea.addEventListener('click', calculateAreaOfTraingle);

@@ -17,7 +17,7 @@ const correctAnswers = [
   '30',
 ];
 
-function calculateScore() {
+const calculateScore = () => {
   let score = 0;
   let index = 0;
 
@@ -33,6 +33,6 @@ function calculateScore() {
   }
   showOutput.style.display = 'block';
   showOutput.innerText = 'Your Total Score is ' + score + '.';
-}
+};
 
 submitButtonAnswer.addEventListener('click', calculateScore);

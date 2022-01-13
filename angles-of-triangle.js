@@ -6,12 +6,12 @@ const showOutput = document.querySelector('#show-output');
 
 showOutput.style.display = 'none';
 
-function showMessage(message) {
+const showMessage = (message) => {
   showOutput.style.display = 'block';
   showOutput.innerText = '--> ' + message;
-}
+};
 
-function formTriangleHandler() {
+const formTriangleHandler = () => {
   const sum =
     Number(inputAngle1.value) +
     Number(inputAngle2.value) +
@@ -34,6 +34,6 @@ function formTriangleHandler() {
   } else {
     showMessage('NO, these three angles does not forms a triangle.');
   }
-}
+};
 
 checkButton.addEventListener('click', formTriangleHandler);
